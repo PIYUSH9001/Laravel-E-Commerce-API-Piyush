@@ -17,4 +17,5 @@ RUN composer install --no-dev --optimize-autoloader
 RUN php artisan config:cache
 
 # The command below runs the migration right before starting the server
-CMD php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT
+CMD php artisan config:cache && php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT
+
