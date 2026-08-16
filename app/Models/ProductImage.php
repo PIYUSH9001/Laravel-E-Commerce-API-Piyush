@@ -15,7 +15,12 @@ class ProductImage extends Model
         return $this->belongsTo(Product::class);
     }
 
-    function getImageUrlAttribute(){
-        return Storage::disk('s3')->url($this->image);
+    public function getImageUrlAttribute()
+    {
+        return config('services.supabase.url')
+            . '/storage/v1/object/public/'
+            . config('services.supabase.bucket')
+            . '/'
+            . $this->image;
     }
 }
