@@ -46,8 +46,9 @@ class ProductController extends Controller
         if($product->save()){
             foreach($request->file('product_images') as $image){
                 $product_image = new ProductImage();
-                $path = $image->store('products','public');
-                $product_image->image = $path;
+                $path = $image->store('products','s3');
+                $result = Str::after($path,"products/");
+                $product_image->image = $result;
                 $product_image->product_id = $product->id;
                 $product_image->save();
             }
