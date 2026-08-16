@@ -16,9 +16,11 @@ class ProductImage extends Model
     }
 
     public function getImageUrlAttribute()
-    {
-        return config('services.supabase.url')
-            . '/storage/v1/object/public/e-commerce-images/'
-            . $this->image;
-    }
+{
+    return config('services.supabase.url')
+        . '/storage/v1/object/public/'
+        . config('services.supabase.bucket')
+        . '/'
+        . $this->image;
+}
 }

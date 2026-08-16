@@ -36,7 +36,7 @@ return [
     ],
 
     'supabase' => [
-    'url' => env('SUPABASE_URL'),
+    'url' => env('AWS_ENDPOINT'),
     'bucket' => env('SUPABASE_BUCKET'),
     ],
 
