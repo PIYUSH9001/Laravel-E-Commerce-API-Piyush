@@ -20,7 +20,7 @@ class ProductImage extends Model
     return config('services.supabase.url')
         . '/storage/v1/object/public/'
         . config('services.supabase.bucket')
-        . '/'
+        . '/products/'
         . $this->image;
 }
 }
