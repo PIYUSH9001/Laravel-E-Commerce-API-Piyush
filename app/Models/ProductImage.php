@@ -17,7 +17,7 @@ class ProductImage extends Model
 
     public function getImageUrlAttribute()
 {
-    return config('services.supabase.url')
+    return config('services.supabase.public_url')
         . '/storage/v1/object/public/'
         . config('services.supabase.bucket')
         . '/products/'

@@ -38,6 +38,7 @@ return [
     'supabase' => [
     'url' => env('AWS_ENDPOINT'),
     'bucket' => env('AWS_BUCKET'),
+    'public_url' => env('AWS_PUBLIC_STORAGE_ENDPOINT'),
     ],
 
 ];
