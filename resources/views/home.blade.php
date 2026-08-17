@@ -9,11 +9,19 @@
 </head>
 
 <body>
-
-    <div class="container-fluid p-3 w-100 vh-100 d-flex align-items-center justify-content-center">
+    <x-navbar title="E-commerce API" />
+    <div class="container-fluid p-3 vh-100 d-flex flex-column align-items-center justify-content-center">
         <h1>
-            Welcome to my API!
+            Welcome to my API ! 
         </h1>
+        <h1 class="text-align-center">
+            Here are some <span class="text-danger">endpoints</span>.
+        </h1>
+        <br>
+        <br>
+        <h1>GET <a href="/api/product/create" class="text-danger">/api/product/create</a></h1>
+
+        <h1>GET <a href="/api/product/" class="text-danger">/api/product/</a></h1>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

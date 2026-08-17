@@ -9,9 +9,10 @@
 </head>
 
 <body>
-
-    <div class="container-fluid p-3 w-100 vh-100 d-flex align-items-center justify-content-center">
-        <form action="/api/product" method="post" enctype="multipart/form-data">
+    <x-navbar title="E-commerce API" />
+    <div class="container-fluid p-3 m-0 vh-100 d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-info">Product form</h1>
+        <form action="/api/product" method="post" enctype="multipart/form-data" class="d-flex flex-column align-items-center justify-content-center">
             @csrf
             <div class="input-group m-3 d-flex align-items-center justify-content-center">
                 <input type="text" class="form-control" placeholder="Enter product name" aria-label="Username" aria-describedby="basic-addon1" name="product_name">
