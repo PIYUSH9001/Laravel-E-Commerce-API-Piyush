@@ -64,7 +64,7 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return Product::find($id);
     }
 
     /**
@@ -89,5 +89,14 @@ class ProductController extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+
+    // Custom functions
+
+
+    public function GetProductsByCategories(string $category)
+    {
+        return Product::where("category",$category)->get();
     }
 }

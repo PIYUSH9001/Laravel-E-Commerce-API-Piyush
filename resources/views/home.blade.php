@@ -19,9 +19,13 @@
         </h1>
         <br>
         <br>
-        <h1>GET <a href="/api/product/create" class="text-danger">/api/product/create</a></h1>
-
-        <h1>GET <a href="/api/product/" class="text-danger">/api/product/</a></h1>
+        <h1>GET <a href="/api/product/create" class="text-danger text-decoration-none">/api/product/create</a></h1>
+        <br>
+        <h1>GET <a href="/api/product/" class="text-danger text-decoration-none">/api/product/</a></h1>
+        <br>
+        <h1>GET <a href="/api/products/gadgets" class="text-danger text-decoration-none">/api/products/{category}</a></h1>
+        <br>
+        <h1>GET <a href="/api/product/1" class="text-danger text-decoration-none">/api/product/{id}</a></h1>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
