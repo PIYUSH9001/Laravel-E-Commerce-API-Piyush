@@ -25,7 +25,8 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-        return view("create-product");
+        $product = new Product();
+        return view("create-product",["product"=>$product]);
     }
 
     /**

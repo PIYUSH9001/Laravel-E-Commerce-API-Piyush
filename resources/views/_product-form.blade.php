@@ -1,5 +1,5 @@
 <form
-    action="{{ $product->exists ? '/api/update/' . $product->id : '/api/product' }}"
+    action="{{ $product->exists ? '/api/product/update/' . $product->id : '/api/product' }}"
     method="POST"
     enctype="multipart/form-data"
     class="d-flex flex-column align-items-center justify-content-center"
