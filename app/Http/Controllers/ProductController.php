@@ -72,7 +72,8 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $result = Product::find($id);
+        return view("edit-product",["product"=>$result]);
     }
 
     /**
